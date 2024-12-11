@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-items ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-items ul li {
+    list-style: none;
+}
+
+.nav-items ul li a {
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 45px;
+    max-width: 50%;
+    margin: auto;
+}
+
+.main-heading {
+    font-size: 45px;
+}
+
+.secondary-heading {
+    font-size: 23px;
+}
+
+.btn {
+    background-color: #00b6d1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    margin: auto;
+    font-weight: 700;
+    color: white;
+}
+
+.downloads {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.download-information {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+    margin: 15px;
+}
+
+.download-information span:nth-child(2) {
+    font-size: 30px;
+}
+
+.download-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: #f9f9f9;
+}
+
+.card h3 {
+    margin: 15px;
+}
+
+.card h4 {
+    font-size: 10px;
+    margin: 15px;
+}
+
+.card button {
+    width: 50%;
+    margin: 15px 0;
+}
+
+.newsletter {
+    color: white;
+    background-color: black;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: "headingbox" "contentbox";
+    padding: 60px 0;
+    gap: 60px;
+}
+
+.subscribe-newsletter {
+    width: 50%;
+    margin: auto;
+    grid-column: headingbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.newsletter-box {
+    margin: 20px 0;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    padding-bottom: 20px;
+}
+
+.newsletter-box h3,
+h4,
+input,
+button {
+    margin: 10px 0;
+    padding: 12px;
+}
+
+.newsletter-content {
+    margin: 20px 0;
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    grid-column: contentbox;
+}
+
+.extra-links {
+    margin: 40px 0;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 60%;
+    gap: 40px;
+    margin: auto;
+}
+
+.links ul li {
+    list-style: none;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.links ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.links ul li:first-child {
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.links ul:last-child li:first-child {
+    font-size: 16px;
+}
+
+.links ul:last-child li:nth-child(2) {
+    font-size: 15px;
+}
+
+.links ul:last-child input {
+    border-radius: 5px;
+}
+
+.links ul:last-child button {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.footer {
+    max-width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons ul {
+    display: flex;
+    gap: 20px;
+}
+
+.icons ul li {
+    list-style: none;
+}
+
+.icons ul li a {
+    color: black;
+    font-size: 2em;
+}
+
+.copyright {
+    margin: 15px 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .icons ul li a {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .download-options {
+        grid-template-columns: 1fr;
+    }
+    .subscribe-newsletter {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .newsletter-box input {
+        width: 80%;
+    }
+}
